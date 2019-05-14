@@ -1,0 +1,41 @@
+.task {
+  
+  &__item {
+    padding: 1rem;
+    --color: #555;
+    --color-date: green;
+    --diplay: none;
+    border-top: 1px solid #ddd;
+    position: relative;
+    color: var(--color);
+    transition: all .15s ease;
+  }
+  &__item:hover {
+    --color: #fff;
+    --color-date: #fff;
+    --diplay: block;
+    background-color: rgba(0, 128, 0, 0.8);
+  }
+  &__description {
+    width: calc(100% - 3.5rem);
+  }
+  &__date {
+    b {
+      color: var(--color-date);
+    }
+  }
+  &__edit,
+  &__delete {
+    display: var(--diplay);
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+  &__edit {
+    margin-right: 3rem;
+  }
+
+
+}
