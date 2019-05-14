@@ -1,0 +1,16 @@
+section.panel-menu
+  nav
+    form#ordenarTask.form
+      h3.form__title Ordenar
+      .form__group
+        input#todas(type="radio", name="ordenar" checked)
+        label(for="todas") Todas
+      .form__group
+        input#pendientes(type="radio", name="ordenar")
+        label(for="pendientes") Pedientes
+      .form__group
+        input#finalizadas(type="radio", name="ordenar")
+        label(for="finalizadas") Finalizadas
+  .add-task
+    span Añadir Tarea
+  
