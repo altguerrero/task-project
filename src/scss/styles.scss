@@ -16,7 +16,10 @@
 
 // MODULOS (SMACSS) O COMPONENTES (ITCSS)
   // Son los elementos de UI de tu interfaz, como botones, tablas, menus, etc.
-
+@import "components/icons";
+@import "components/header.scss";
+@import "components/panel-menu";
+@import "components/tareas";
 // Theme (colors and fonts)
 @import "theme/typography";
 
