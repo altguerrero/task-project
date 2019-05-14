@@ -5,3 +5,16 @@ append config
   -pageImage = ''
 
 block main
+  main.main
+    header.header
+      .container
+        h1.header__brand Tareas
+        .header__block-left
+          .header__search
+            svg.svg-icon.before
+              use(href="assets/img/icons.svg#search")
+          .heder__cerrar-sesion
+            span Cerrar Sesión
+
+    include ../includes/panel-menu
+    include ../includes/tareas
