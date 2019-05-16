@@ -1,0 +1,25 @@
+section.panel-menu
+  form#ordenarTask.form
+    .form__search
+      .input-field
+        input(type="text" name="consultar")#buscarTarea
+        label 
+          svg.svg-icon.before
+            use(href="assets/img/icons.svg#search")
+          span Buscar
+
+    p
+      label
+        input#todas(type="radio", name="ordenar",checked)
+        span Todas
+    p
+      label
+        input#pendientes(type="radio", name="ordenar",)
+        span Pedientes
+    p
+      label
+        input#finalizadas(type="radio", name="ordenar")
+        span Finalizadas
+  .add-task
+    span#addTaskbutton.btn.btn-block Añadir Tarea
+  
