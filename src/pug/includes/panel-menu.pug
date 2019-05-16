@@ -1,16 +1,25 @@
 section.panel-menu
-  nav
-    form#ordenarTask.form
-      h3.form__title Ordenar
-      .form__group
-        input#todas(type="radio", name="ordenar" checked)
-        label(for="todas") Todas
-      .form__group
-        input#pendientes(type="radio", name="ordenar")
-        label(for="pendientes") Pedientes
-      .form__group
+  form#ordenarTask.form
+    .form__search
+      .input-field
+        input(type="text" name="consultar")#buscarTarea
+        label 
+          svg.svg-icon.before
+            use(href="assets/img/icons.svg#search")
+          span Buscar
+
+    p
+      label
+        input#todas(type="radio", name="ordenar",checked)
+        span Todas
+    p
+      label
+        input#pendientes(type="radio", name="ordenar",)
+        span Pedientes
+    p
+      label
         input#finalizadas(type="radio", name="ordenar")
-        label(for="finalizadas") Finalizadas
+        span Finalizadas
   .add-task
-    span Añadir Tarea
+    span#addTaskbutton.btn.btn-block Añadir Tarea
   

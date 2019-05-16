@@ -1,0 +1,15 @@
+.cud-tarea#cudTarea
+  h5.cud-tarea__title#cudTareaTitle
+  form.form#formCud
+    input#cudTaskId(type="hidden" name="id")
+    .input-field
+      input(type="text" id="input-descripcion" required).validate
+      label(for="input-descripcion")#input-label Descripción
+    .input-field
+      input(type="text" id="input-fechaVencimiento" required).datepicker
+      label(for="input-fechaVencimiento") Fecha de Vencimiento
+    #cudTareaOpciones
+    
+    .cud-tarea__accion
+      #cudTareaAccion
+      a.cud-tarea__cancelar.btn Cancelar
